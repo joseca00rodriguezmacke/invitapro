@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es-PY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>InvitaPro · Invitaciones digitales premium en Paraguay</title>
+<meta name="description" content="Invitaciones digitales para bodas, XV, bautismos, cumpleaños y eventos en Paraguay. Confirmación de asistencia, mapa, regalos, panel en vivo y check-in con QR.">
+<meta property="og:title" content="InvitaPro · Invitaciones digitales premium">
+<meta property="og:description" content="Bodas, XV, bautismos, cumpleaños y eventos. Pedí la tuya por WhatsApp.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#14110c">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Pinyon+Script&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+<style>
+  :root { --bg: #14110c; --bg2: #1d1810; --surface: #211b12; --text: #f5ecd7; --muted: #c2b28c; --primary: #d4af5a; --accent: #e9cd84; --on-primary: #14110c;
+    --f-display: "Cormorant Garamond", Georgia, serif; --f-script: "Pinyon Script", cursive; --f-body: "Inter", system-ui, sans-serif; color-scheme: dark; }
+  body { background: var(--bg); }
+  .nav { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; gap: 12px; padding: 12px var(--gutter); background: color-mix(in srgb, var(--bg) 80%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .nav .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-family: var(--f-display); font-size: 1.45em; font-weight: 600; }
+  .nav .brand img { width: 30px; height: 30px; border-radius: 8px; }
+  .nav .sp { flex: 1; } .nav a.l { color: var(--muted); text-decoration: none; font-size: .9em; display: none; } @media (min-width: 760px) { .nav a.l { display: inline; } }
+  .w { max-width: 1120px; margin: 0 auto; padding: 0 var(--gutter); }
+  .hero { position: relative; overflow: hidden; padding: clamp(56px, 12vw, 120px) 0 clamp(48px, 10vw, 100px); text-align: center; isolation: isolate; }
+  .hero::before { content: ""; position: absolute; inset: -20% -10% auto; height: 120%; z-index: -1; background: radial-gradient(600px 380px at 50% 10%, color-mix(in srgb, var(--primary) 26%, transparent), transparent 70%), radial-gradient(500px 300px at 85% 70%, rgb(229 141 177 / .14), transparent 70%), radial-gradient(500px 300px at 10% 80%, rgb(127 196 168 / .1), transparent 70%); }
+  .hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+  .kicker { display: inline-block; font-size: .72em; font-weight: 600; letter-spacing: .32em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); padding: .5em 1.1em; border-radius: 999px; }
+  .hero h1 { font-size: clamp(42px, 11vw, 92px); font-weight: 500; line-height: 1.02; margin: .35em auto .25em; max-width: 14ch; }
+  .hero h1 em { font-family: var(--f-script); font-style: normal; color: var(--primary); font-weight: 400; font-size: 1.15em; }
+  .hero p { color: var(--muted); max-width: 46ch; margin: 0 auto 1.6rem; font-size: 1.05em; }
+  .cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .trust { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin-top: 28px; color: var(--muted); font-size: .85em; }
+  .trust span::before { content: "✦ "; color: var(--primary); }
+  section.s { padding: clamp(56px, 10vw, 96px) 0; border-top: 1px solid var(--line); }
+  .h { text-align: center; margin-bottom: 32px; } .h h2 { font-size: clamp(32px, 7vw, 52px); margin: .2em 0; } .h p { color: var(--muted); max-width: 48ch; margin: 0 auto; }
+  .eyebrow { font-size: .72em; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--primary); }
+  .demos { display: grid; gap: 18px; } @media (min-width: 760px) { .demos { grid-template-columns: repeat(3, 1fr); } }
+  .demo { position: relative; display: block; border-radius: 24px; overflow: hidden; text-decoration: none; color: inherit; border: 1px solid var(--line); background: var(--surface); transition: transform .4s var(--ease), box-shadow .4s; }
+  .demo:hover { transform: translateY(-4px); box-shadow: 0 30px 60px -30px rgb(0 0 0 / .8); }
+  .demo .art { position: relative; aspect-ratio: 4/5; display: grid; place-items: center; text-align: center; overflow: hidden; }
+  .demo .art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .demo .art .t { position: relative; padding: 20px; }
+  .demo .art .t small { display: block; font-size: .7em; letter-spacing: .3em; text-transform: uppercase; opacity: .8; }
+  .demo .art .t b { display: block; font-weight: 400; font-size: clamp(44px, 12vw, 64px); line-height: 1.05; margin: .15em 0; }
+  .demo .meta { padding: 16px 18px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .demo .meta span { font-size: .85em; color: var(--muted); }
+  .demo .meta i { font-style: normal; font-size: .75em; font-weight: 700; padding: .3em .8em; border-radius: 999px; background: color-mix(in srgb, var(--primary) 18%, transparent); color: var(--primary); }
+  .themes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; } @media (min-width: 640px) { .themes { grid-template-columns: repeat(4, 1fr); } } @media (min-width: 1000px) { .themes { grid-template-columns: repeat(5, 1fr); } }
+  .th { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
+  .th .sw { position: relative; height: 92px; display: grid; place-items: center; }
+  .th .sw svg { position: absolute; top: 6px; left: 6px; width: 64px; opacity: .85; }
+  .th .sw b { font-size: 1.8em; font-weight: 400; position: relative; }
+  .th .dots { display: flex; gap: 4px; position: absolute; bottom: 8px; right: 8px; } .th .dots i { width: 12px; height: 12px; border-radius: 50%; box-shadow: 0 0 0 1.5px rgb(255 255 255 / .6); }
+  .th .nm { padding: 10px 12px; font-size: .85em; font-weight: 600; background: var(--surface); }
+  .feat-grid { display: grid; gap: 12px; } @media (min-width: 760px) { .feat-grid { grid-template-columns: repeat(3, 1fr); } }
+  .feat { padding: 20px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); }
+  .feat .ic { font-size: 1.6em; } .feat h3 { font-family: var(--f-body); font-size: 1em; font-weight: 700; margin: .5em 0 .3em; } .feat p { color: var(--muted); margin: 0; font-size: .92em; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .chips span { padding: .55em 1em; border-radius: 999px; border: 1px solid var(--line); font-size: .9em; }
+  .plans { display: grid; gap: 14px; } @media (min-width: 860px) { .plans { grid-template-columns: repeat(3, 1fr); align-items: stretch; } }
+  .plan { position: relative; display: flex; flex-direction: column; padding: 26px 22px; border-radius: 24px; background: var(--surface); border: 1px solid var(--line); }
+  .plan.star { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary), 0 30px 60px -30px color-mix(in srgb, var(--primary) 50%, transparent); }
+  .plan .badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary); color: var(--on-primary); font-size: .72em; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: .4em 1em; border-radius: 999px; white-space: nowrap; }
+  .plan h3 { font-family: var(--f-body); font-weight: 700; font-size: 1.05em; letter-spacing: .1em; text-transform: uppercase; margin: 0; }
+  .plan .price { font-family: var(--f-display); font-size: 2.6em; color: var(--primary); margin: .1em 0 .2em; line-height: 1.1; }
+  .plan ul { list-style: none; margin: 0 0 20px; padding: 0; display: grid; gap: 8px; flex: 1; }
+  .plan li { padding-left: 1.5em; position: relative; font-size: .93em; } .plan li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+  .plan li.plus { color: var(--muted); }
+  .addons { margin-top: 18px; display: grid; gap: 10px; } @media (min-width: 760px) { .addons { grid-template-columns: repeat(4, 1fr); } }
+  .addon { padding: 16px; border-radius: 16px; border: 1px dashed var(--line); text-align: center; } .addon b { display: block; } .addon span { color: var(--primary); font-family: var(--f-display); font-size: 1.4em; }
+  .steps { display: grid; gap: 12px; counter-reset: s; } @media (min-width: 760px) { .steps { grid-template-columns: repeat(4, 1fr); } }
+  .steps div { counter-increment: s; padding: 20px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); }
+  .steps div::before { content: counter(s); display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--primary); color: var(--on-primary); font-weight: 700; margin-bottom: 10px; }
+  .steps p { margin: 0; color: var(--muted); font-size: .92em; } .steps b { display: block; margin-bottom: 4px; }
+  details.q { border-bottom: 1px solid var(--line); padding: 16px 0; } details.q summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 10px; } details.q summary::after { content: "+"; color: var(--primary); font-size: 1.4em; line-height: 1; } details.q[open] summary::after { content: "–"; } details.q p { color: var(--muted); margin: .6em 0 0; }
+  .final { text-align: center; padding: clamp(64px, 12vw, 120px) 0; background: radial-gradient(600px 300px at 50% 100%, color-mix(in srgb, var(--primary) 22%, transparent), transparent 70%); border-top: 1px solid var(--line); }
+  .final h2 { font-size: clamp(36px, 9vw, 64px); } .final h2 em { font-family: var(--f-script); font-style: normal; color: var(--primary); font-weight: 400; }
+  footer.f { text-align: center; color: var(--muted); font-size: .85em; padding: 28px var(--gutter) 100px; border-top: 1px solid var(--line); }
+  .fab { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 40; width: 60px; height: 60px; border-radius: 50%; background: #1f9d55; color: #fff; display: grid; place-items: center; box-shadow: 0 14px 30px -8px rgb(31 157 85 / .6); }
+  .fab svg { width: 30px; height: 30px; }
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Principal"><a class="brand" href="./"><img src="assets/img/favicon.svg" alt="">InvitaPro</a><span class="sp"></span>
+  <a class="l" href="#demos">Demos</a><a class="l" href="#estilos">Estilos</a><a class="l" href="#planes">Planes</a><a class="l" href="#preguntas">Preguntas</a>
+  <a class="btn sm wa" data-wa href="#">Pedí la tuya</a></nav>
+
+<header class="hero"><canvas id="fx" aria-hidden="true"></canvas><div class="w">
+  <span class="kicker">Invitaciones digitales · Paraguay</span>
+  <h1>Tu evento merece una invitación <em>inolvidable</em></h1>
+  <p>Bodas, XV, bautismos, cumpleaños y eventos corporativos. Con confirmación de asistencia, mapa, regalos, panel en vivo y check-in con QR. Todo desde un link de WhatsApp.</p>
+  <div class="cta"><a class="btn" href="#demos">Ver demos</a><a class="btn ghost" href="creador.html?modo=cliente">✨ Diseñá la tuya</a></div>
+  <div class="trust"><span>Lista en 24–72 h</span><span>Sin apps que instalar</span><span>Confirmaciones en tiempo real</span></div>
+</div></header>
+
+<section class="s" id="demos"><div class="w">
+  <div class="h"><div class="eyebrow">Demos en vivo</div><h2>Abrilas desde tu celular</h2><p>Probá todo: abrí el sobre, confirmá asistencia y mirá tu QR de ingreso. Cada demo trae invitados de prueba.</p></div>
+  <div class="demos" id="demoList"></div>
+</div></section>
+
+<section class="s" id="estilos"><div class="w">
+  <div class="h"><div class="eyebrow">Estilos</div><h2><span id="nThemes">21</span> temas, cientos de combinaciones</h2><p>Cada tema tiene sus paletas, tipografías, ornamentos y efectos. Combinalos como quieras.</p></div>
+  <div class="themes" id="themeList"></div>
+  <div class="h" style="margin:44px 0 18px"><div class="eyebrow">Aperturas</div><h2 style="font-size:clamp(26px,6vw,38px)">Una entrada de película</h2></div>
+  <div class="chips" id="openList"></div>
+</div></section>
+
+<section class="s"><div class="w">
+  <div class="h"><div class="eyebrow">Todo incluido</div><h2>Mucho más que una tarjeta</h2></div>
+  <div class="feat-grid">
+    <div class="feat"><div class="ic">💌</div><h3>Invitación personalizada</h3><p>“Familia Gómez, reservamos 4 lugares para ustedes”. Cada invitado recibe su link.</p></div>
+    <div class="feat"><div class="ic">✅</div><h3>Confirmación inteligente</h3><p>Acompañantes, restricciones alimentarias, canción sugerida y aviso por WhatsApp.</p></div>
+    <div class="feat"><div class="ic">📍</div><h3>Mapa, Waze y estacionamiento</h3><p>Uno o varios lugares con indicaciones claras para llegar sin vueltas.</p></div>
+    <div class="feat"><div class="ic">🎁</div><h3>Regalos sin vergüenza</h3><p>Alias y cuentas con botón “Copiar”, QR de pago y lista externa.</p></div>
+    <div class="feat"><div class="ic">📊</div><h3>Panel en vivo</h3><p>Confirmados, pendientes, menú especial y recordatorios por WhatsApp con un toque.</p></div>
+    <div class="feat"><div class="ic">📷</div><h3>Check-in con QR</h3><p>Cada invitado tiene su QR de ingreso. En la puerta se escanea con el celular.</p></div>
+  </div>
+</div></section>
+
+<section class="s" id="planes"><div class="w">
+  <div class="h"><div class="eyebrow">Planes</div><h2>Elegí el tuyo</h2><p>Pago único por evento. Sin mensualidades.</p></div>
+  <div class="plans">
+    <div class="plan"><h3>Básico</h3><div class="price" data-price="basico"></div>
+      <ul><li>Apertura animada y música</li><li>Portada con efectos</li><li>Cuenta regresiva</li><li>Mapa e itinerario</li><li>Código de vestimenta</li><li>Confirmación por WhatsApp</li></ul>
+      <a class="btn ghost block" data-wa="basico" href="#">Quiero el Básico</a></div>
+    <div class="plan star"><span class="badge">El más elegido</span><h3>Pro</h3><div class="price" data-price="pro"></div>
+      <ul><li class="plus">Todo lo del Básico, más:</li><li>Invitados con nombre y cupos</li><li>Confirmaciones guardadas en planilla</li><li>Galería de fotos</li><li>Regalos y cuentas</li><li>Acompañantes y restricciones</li><li>Nuestra historia y padrinos</li></ul>
+      <a class="btn block" data-wa="pro" href="#">Quiero el Pro</a></div>
+    <div class="plan"><h3>VIP</h3><div class="price" data-price="vip"></div>
+      <ul><li class="plus">Todo lo del Pro, más:</li><li>Panel del anfitrión en vivo</li><li>Check-in con QR en la puerta</li><li>Libro de mensajes</li><li>Canciones sugeridas</li><li>Recordatorios a pendientes</li><li>Sin marca InvitaPro</li></ul>
+      <a class="btn ghost block" data-wa="vip" href="#">Quiero el VIP</a></div>
+  </div>
+  <div class="addons">
+    <div class="addon"><b>Tarjeta imprimible PDF</b><span data-price="addon"></span></div>
+    <div class="addon"><b>Save the date</b><span data-price="addon"></span></div>
+    <div class="addon"><b>Imagen para compartir</b><span data-price="addon"></span></div>
+    <div class="addon"><b>Historia de Instagram animada</b><span data-price="addon"></span></div>
+  </div>
+</div></section>
+
+<section class="s"><div class="w">
+  <div class="h"><div class="eyebrow">Cómo funciona</div><h2>Fácil, de verdad</h2></div>
+  <div class="steps">
+    <div><b>Elegí tu estilo</b><p>Mirá las demos o armá tu diseño en minutos con el diseñador.</p></div>
+    <div><b>Mandanos los datos</b><p>Fecha, lugares, fotos y lista de invitados (desde Excel).</p></div>
+    <div><b>Revisá y aprobá</b><p>Te enviamos la vista previa para ajustar detalles.</p></div>
+    <div><b>Enviá por WhatsApp</b><p>Cada invitado recibe su link personal. Vos seguís todo en vivo.</p></div>
+  </div>
+</div></section>
+
+<section class="s" id="preguntas"><div class="w" style="max-width:760px">
+  <div class="h"><div class="eyebrow">Preguntas</div><h2>Preguntas frecuentes</h2></div>
+  <details class="q"><summary>¿Los invitados tienen que instalar algo?</summary><p>No. Es un link que se abre en cualquier celular, desde WhatsApp.</p></details>
+  <details class="q"><summary>¿Cuánto tarda?</summary><p>Entre 24 y 72 horas desde que tenemos todos los datos.</p></details>
+  <details class="q"><summary>¿Puedo cambiar datos después?</summary><p>Sí, los cambios se ven al instante en el mismo link.</p></details>
+  <details class="q"><summary>¿Cómo veo quién confirmó?</summary><p>En el plan Pro las respuestas quedan en una planilla. En el VIP tenés un panel en vivo con estadísticas, mensajes y canciones.</p></details>
+  <details class="q"><summary>¿Mis datos y los de mis invitados son privados?</summary><p>Sí. La lista de invitados vive en una planilla privada; la invitación no tiene publicidad, rastreo ni cookies.</p></details>
+</div></section>
+
+<section class="final"><div class="w"><h2>Hagamos tu invitación <em>soñada</em></h2><p class="muted" style="margin-bottom:1.4rem">Escribinos y te ayudamos a elegir.</p>
+  <div class="cta"><a class="btn wa" data-wa href="#">Escribir por WhatsApp</a><a class="btn ghost" href="creador.html?modo=cliente">Diseñar la mía</a></div></div></section>
+
+<footer class="f">© <span id="yr"></span> InvitaPro · Asunción, Paraguay</footer>
+<a class="fab" data-wa href="#" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.6A8.5 8.5 0 1112 20.5a8.6 8.6 0 01-4.3-1.1z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4 4 0 01-2.3-2.3l.8-1-1-2z"/></svg></a>
+
+<script src="config.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/themes.js"></script>
+<script src="assets/js/ornaments.js"></script>
+<script src="assets/js/particles.js"></script>
+<script>
+(function () {
+  const { $, esc, gs, wa, CFG } = IP;
+  const DEMOS = [
+    { slug: "boda-sofia-y-mateo", g: "GOMEZ4", plan: "VIP", tipo: "Boda", nombre: "Sofía & Mateo", tema: "dorado", pal: 0, estilo: "Dorado elegante · sobre con lacre" },
+    { slug: "xv-valentina", g: "SOFI01", plan: "VIP", tipo: "XV años", nombre: "Valentina", tema: "xv-glam", pal: 0, estilo: "XV glam · telón" },
+    { slug: "bautismo-benjamin", g: "TORR03", plan: "Pro", tipo: "Bautismo", nombre: "Benjamín", tema: "bautismo", pal: 0, estilo: "Bautismo celeste · puertas" }
+  ];
+  const T = IPThemes;
+  $("#demoList").innerHTML = DEMOS.map(d => { const t = T.tema(d.tema), p = t.paletas[d.pal], f = T.FUENTES[t.fuentes[0]];
+    return `<a class="demo" href="invitacion.html?e=${d.slug}&g=${d.g}"><div class="art" style="background:${p.bg};color:${p.primary}"><img src="eventos/${d.slug}/portada.svg" alt="" loading="lazy">
+      <div class="t"><small style="color:${p.muted}">${esc(d.tipo)}</small><b style="font-family:'${f.script}',cursive">${esc(d.nombre)}</b></div></div>
+      <div class="meta"><span>${esc(d.estilo)}</span><i>${d.plan}</i></div></a>`; }).join("");
+  const fams = new Set(); DEMOS.forEach(d => { const f = T.FUENTES[T.tema(d.tema).fuentes[0]]; fams.add(f.script); });
+  const l = document.createElement("link"); l.rel = "stylesheet"; l.href = "https://fonts.googleapis.com/css2?" + [...fams].map(n => "family=" + n.replace(/ /g, "+")).join("&") + "&display=swap"; document.head.appendChild(l);
+  $("#nThemes").textContent = T.TEMAS.length;
+  $("#themeList").innerHTML = T.TEMAS.map(t => { const p = t.paletas[0]; return `<div class="th"><div class="sw" style="background:linear-gradient(135deg,${p.bg},${p.bg2});color:${p.primary}">${IPOrn.corner(t.motivo)}<b style="font-family:var(--f-display)">Aa</b><span class="dots">${t.paletas.map(q => `<i style="background:${q.primary}"></i>`).join("")}</span></div><div class="nm">${esc(t.nombre)}</div></div>`; }).join("");
+  $("#openList").innerHTML = Object.values(T.APERTURAS).map(a => `<span>${esc(a)}</span>`).join("");
+  document.querySelectorAll("[data-price]").forEach(el => el.textContent = gs(CFG.precios[el.dataset.price]));
+  document.querySelectorAll("[data-wa]").forEach(a => { const p = a.dataset.wa; a.href = wa(CFG.whatsappVentas, p ? `¡Hola! Quiero una invitación InvitaPro, plan ${p.toUpperCase()} ✨` : "¡Hola! Quiero información sobre las invitaciones InvitaPro ✨"); a.target = "_blank"; a.rel = "noopener"; });
+  $("#yr").textContent = new Date().getFullYear();
+  IPFx.start($("#fx"), "brillos", { primary: "#d4af5a", accent: "#e9cd84", text: "#f5ecd7", muted: "#c2b28c", bg: "#14110c", dark: true });
+})();
+</script>
+</body>
+</html>

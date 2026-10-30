@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es-PY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Check-in · InvitaPro</title>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/app.css">
+<style>
+  .cam { position: relative; aspect-ratio: 1; max-width: 420px; margin: 0 auto; border-radius: 22px; overflow: hidden; background: #000; }
+  .cam video { width: 100%; height: 100%; object-fit: cover; }
+  .cam .frame { position: absolute; inset: 16%; border-radius: 18px; box-shadow: 0 0 0 999px rgb(0 0 0 / .35); }
+  .cam .frame::before, .cam .frame::after { content: ""; position: absolute; inset: 0; border: 3px solid #fff; border-radius: 18px; clip-path: polygon(0 0, 22% 0, 22% 4%, 4% 4%, 4% 22%, 0 22%, 0 78%, 4% 78%, 4% 96%, 22% 96%, 22% 100%, 78% 100%, 78% 96%, 96% 96%, 96% 78%, 100% 78%, 100% 22%, 96% 22%, 96% 4%, 78% 4%, 78% 0, 100% 0, 100% 100%, 0 100%); }
+  .cam .scan { position: absolute; left: 16%; right: 16%; height: 2px; top: 16%; background: linear-gradient(90deg, transparent, #fff, transparent); animation: scan 2.2s ease-in-out infinite alternate; }
+  @keyframes scan { to { top: 84%; } }
+  .cam .start { position: absolute; inset: 0; display: grid; place-items: center; }
+  .result { max-width: 420px; margin: 16px auto 0; border-radius: 20px; padding: 20px; text-align: center; color: #fff; }
+  .result.ok { background: linear-gradient(160deg, #2f8f5b, #1f6d43); } .result.warn { background: linear-gradient(160deg, #d49a1f, #a8740c); } .result.err { background: linear-gradient(160deg, #c0533e, #932f1e); }
+  .result h2 { font-family: var(--f-display); font-size: 2em; margin: .1em 0; }
+  .result .meta { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .result .meta span { background: rgb(255 255 255 / .18); padding: .3em .8em; border-radius: 999px; font-weight: 600; font-size: .9em; }
+  .search-list { display: grid; gap: 8px; margin-top: 10px; }
+  .search-list button { display: flex; justify-content: space-between; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; min-height: 56px; }
+  .counter { text-align: center; font-size: .9em; color: var(--muted); margin: 10px 0; }
+</style>
+</head>
+<body class="app">
+<header class="topbar"><a class="brand" href="./"><img src="assets/img/favicon.svg" alt="">Check-in</a><span class="sp"></span><span class="live" id="cnt">—</span></header>
+<main class="app-main" id="app" style="max-width:560px">
+  <h1 id="title" style="text-align:center">Cargando…</h1>
+  <div class="cam" id="cam"><video id="video" playsinline muted></video><div class="frame"></div><div class="scan" hidden></div>
+    <div class="start"><button class="btn" id="startBtn" type="button">Activar cámara</button></div></div>
+  <div id="result" aria-live="assertive"></div>
+  <section class="panel-card" style="margin-top:16px"><h2>Búsqueda manual</h2>
+    <input id="q" type="search" placeholder="Nombre del invitado o código" aria-label="Buscar invitado">
+    <div class="search-list" id="list"></div></section>
+</main>
+<script src="config.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/checkin.js"></script>
+</body>
+</html>

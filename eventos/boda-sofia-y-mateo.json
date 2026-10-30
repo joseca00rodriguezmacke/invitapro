@@ -1,0 +1,102 @@
+{
+  "slug": "boda-sofia-y-mateo",
+  "demo": true,
+  "plan": "vip",
+  "funciones": {},
+  "tipo": "boda",
+  "mesas": true,
+  "tema": { "id": "dorado", "paleta": 0, "tipografia": "", "ornamento": "rico", "apertura": "sobre", "efecto": "", "particulas": true },
+  "textos": {
+    "nivel": "completo",
+    "eyebrow": "Nos casamos",
+    "historiaTitulo": "Nuestra historia",
+    "padrinosTitulo": "Padres y padrinos",
+    "gracias": "Gracias por acompañarnos en el día más feliz de nuestras vidas. Ya pueden ver y descargar todas las fotos.",
+    "secciones": {
+      "cuenta": "Cada día que pasa estamos más cerca del “sí”.",
+      "itinerario": "Así vamos a vivir esta noche juntos.",
+      "lugares": "Te esperamos en estos dos lugares muy especiales.",
+      "vestimenta": "Queremos que disfrutes la noche con comodidad y elegancia.",
+      "rsvp": "Tu confirmación nos ayuda a preparar todo con mucho cariño.",
+      "mensajes": "Dejanos unas palabras para leer en el futuro."
+    }
+  },
+  "festejados": { "nombres": "Sofía & Mateo", "iniciales": "S&M" },
+  "titulo": "Boda de Sofía & Mateo",
+  "fecha": "2026-12-12T19:30:00-03:00",
+  "fin": "2026-12-13T04:00:00-03:00",
+  "frase": "Y en medio de todo, encontramos nuestro lugar favorito: el uno en el otro.",
+  "bienvenida": "Queremos compartir con ustedes el comienzo de nuestra vida juntos.",
+  "portada": { "imagen": "eventos/boda-sofia-y-mateo/portada.svg", "video": "" },
+  "musica": { "src": "assets/audio/romantica.m4a" },
+  "historia": [
+    { "fecha": "2018", "titulo": "Nos conocimos", "texto": "Un cumpleaños en San Bernardino, una canción de fondo y una charla que duró hasta el amanecer." },
+    { "fecha": "2020", "titulo": "Primer viaje juntos", "texto": "Encarnación, el río y la certeza de que queríamos muchos viajes más." },
+    { "fecha": "2023", "titulo": "Nuestro primer hogar", "texto": "Un departamento chiquito, un perro llamado Tapir y muchísimos sueños." },
+    { "fecha": "2025", "titulo": "¡Dijo que sí!", "texto": "Al atardecer, frente al lago Ypacaraí, con las manos temblando y el corazón a mil." }
+  ],
+  "carta": { "titulo": "Una carta para vos", "texto": "Gracias por ser parte de nuestra historia.\nCada uno de ustedes nos regaló algo: un consejo, una risa, un abrazo en el momento justo.\nPor eso no imaginamos este día sin ustedes.", "firma": "Sofi y Mateo" },
+  "versiculo": { "texto": "El amor es paciente, es bondadoso. Todo lo disculpa, todo lo cree, todo lo espera, todo lo soporta.", "cita": "1 Corintios 13:4-7" },
+  "dedicatoria": "",
+  "itinerario": [
+    { "hora": "19:30", "titulo": "Ceremonia religiosa", "descripcion": "Parroquia San Cristóbal", "icono": "iglesia" },
+    { "hora": "21:00", "titulo": "Recepción y brindis", "descripcion": "Cóctel de bienvenida en el jardín", "icono": "copa" },
+    { "hora": "22:00", "titulo": "Cena", "descripcion": "Menú de pasos", "icono": "cena" },
+    { "hora": "23:30", "titulo": "¡A bailar!", "descripcion": "Vals y pista abierta", "icono": "musica" },
+    { "hora": "02:00", "titulo": "Torta y sorpresas", "descripcion": "", "icono": "torta" }
+  ],
+  "lugares": [
+    { "tipo": "Ceremonia", "hora": "19:30 h", "nombre": "Parroquia San Cristóbal", "direccion": "Av. Mcal. López, Asunción", "query": "Parroquia San Cristóbal, Asunción, Paraguay", "estacionamiento": "Estacionamiento sobre la calle lateral. Recomendamos llegar 15 minutos antes." },
+    { "tipo": "Recepción", "hora": "21:00 h", "nombre": "Quinta Las Acacias", "direccion": "Camino a Areguá km 3, Luque", "query": "Luque, Paraguay", "estacionamiento": "Estacionamiento propio con cuidacoches. Hay servicio de valet." }
+  ],
+  "vestimenta": {
+    "codigo": "Formal elegante",
+    "descripcion": "Damas: vestido largo. Caballeros: traje oscuro, la corbata es opcional.",
+    "colores": [ { "hex": "#1f2a44", "nombre": "Azul noche" }, { "hex": "#6b7d5c", "nombre": "Oliva" }, { "hex": "#b08a8a", "nombre": "Rosa viejo" }, { "hex": "#8a6a3a", "nombre": "Bronce" } ],
+    "evitar": [ { "hex": "#ffffff", "nombre": "Blanco" }, { "hex": "#efe6d2", "nombre": "Marfil" } ]
+  },
+  "galeria": [
+    { "src": "eventos/boda-sofia-y-mateo/galeria-1.svg", "alt": "Anillos", "w": 600, "h": 800 },
+    { "src": "eventos/boda-sofia-y-mateo/galeria-2.svg", "alt": "Brindis", "w": 600, "h": 600 },
+    { "src": "eventos/boda-sofia-y-mateo/galeria-3.svg", "alt": "Ramo de novia", "w": 600, "h": 900 },
+    { "src": "eventos/boda-sofia-y-mateo/galeria-4.svg", "alt": "Torta", "w": 600, "h": 750 },
+    { "src": "eventos/boda-sofia-y-mateo/galeria-5.svg", "alt": "Velas", "w": 600, "h": 600 },
+    { "src": "eventos/boda-sofia-y-mateo/galeria-6.svg", "alt": "Rosa", "w": 600, "h": 820 }
+  ],
+  "padrinos": [
+    { "rol": "Padres de la novia", "nombres": "Ana Benítez y Carlos Rojas" },
+    { "rol": "Padres del novio", "nombres": "Laura Giménez y Jorge Duarte" },
+    { "rol": "Padrinos", "nombres": "Lucía Rojas y Diego Ortiz" },
+    { "rol": "Padrinos", "nombres": "Paula Duarte y Martín Vera" }
+  ],
+  "regalos": {
+    "titulo": "Mesa de regalos",
+    "mensaje": "Su presencia es nuestro mejor regalo. Si desean hacernos un obsequio, pueden ayudarnos con nuestra luna de miel.",
+    "cuentas": [
+      { "banco": "Banco Ejemplo S.A.", "titular": "Sofía Rojas Benítez", "alias": "SOFIA.MATEO.BODA", "cuenta": "0000 1234 5678", "ci": "1.234.567" },
+      { "banco": "Billetera Ejemplo", "titular": "Mateo Duarte", "alias": "0981 000 000", "cuenta": "", "ci": "" }
+    ],
+    "qr": "",
+    "lista": { "texto": "Ver lista de regalos", "url": "https://example.com/lista" }
+  },
+  "rsvp": { "whatsapp": "0981000000", "limite": "2026-11-30", "maxLibre": 4 },
+  "fotos": { "subir": "https://photos.google.com/", "album": "https://photos.google.com/" },
+  "demo_invitados": [
+    { "codigo": "GOMEZ4", "nombre": "Familia Gómez", "telefono": "0981100001", "cupos": 4, "grupo": "Familia novia", "mesa": "3" },
+    { "codigo": "LUCIA1", "nombre": "Lucía Fernández", "telefono": "0981100002", "cupos": 1, "grupo": "Amigas", "mesa": "8" },
+    { "codigo": "VERA02", "nombre": "Martín y Carla Vera", "telefono": "0981100003", "cupos": 2, "grupo": "Padrinos", "mesa": "1" },
+    { "codigo": "ORTIZ3", "nombre": "Familia Ortiz", "telefono": "0981100004", "cupos": 3, "grupo": "Familia novio", "mesa": "4" },
+    { "codigo": "BENI02", "nombre": "Tía Rosa y Tío Pedro", "telefono": "0981100005", "cupos": 2, "grupo": "Familia novia", "mesa": "3" },
+    { "codigo": "OFIC05", "nombre": "Equipo de la oficina", "telefono": "0981100006", "cupos": 5, "grupo": "Trabajo", "mesa": "10" },
+    { "codigo": "DIEGO1", "nombre": "Diego Ortiz", "telefono": "0981100007", "cupos": 1, "grupo": "Amigos", "mesa": "7" },
+    { "codigo": "ACOS02", "nombre": "Valeria y Nicolás Acosta", "telefono": "0981100008", "cupos": 2, "grupo": "Amigos", "mesa": "7" },
+    { "codigo": "ABUE02", "nombre": "Abuelos Giménez", "telefono": "0981100009", "cupos": 2, "grupo": "Familia novio", "mesa": "2" },
+    { "codigo": "CAMI01", "nombre": "Camila Ríos", "telefono": "0981100010", "cupos": 1, "grupo": "Amigas", "mesa": "8" },
+    { "codigo": "MART04", "nombre": "Familia Martínez", "telefono": "0981100011", "cupos": 4, "grupo": "Vecinos", "mesa": "9" },
+    { "codigo": "PROF02", "nombre": "Prof. Silvia Cáceres y acompañante", "telefono": "0981100012", "cupos": 2, "grupo": "Trabajo", "mesa": "10" }
+  ],
+  "demo_mensajes": [
+    { "nombre": "Lucía", "mensaje": "¡No puedo creer que llegó el día! Los quiero muchísimo, que sean felices siempre." },
+    { "nombre": "Familia Ortiz", "mensaje": "Que este amor siga creciendo cada día. ¡Felicidades!" }
+  ]
+}

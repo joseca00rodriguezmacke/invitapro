@@ -1,0 +1,93 @@
+{
+  "slug": "xv-valentina",
+  "demo": true,
+  "plan": "vip",
+  "funciones": {},
+  "tipo": "xv",
+  "mesas": false,
+  "tema": { "id": "xv-glam", "paleta": 0, "tipografia": "", "ornamento": "rico", "apertura": "telon", "efecto": "", "particulas": true },
+  "textos": {
+    "nivel": "medio",
+    "eyebrow": "Mis XV años",
+    "historiaTitulo": "Mis 15 en momentos",
+    "padrinosTitulo": "Mi familia",
+    "gracias": "¡Gracias por hacer de mis 15 una noche mágica! Acá están todas las fotos.",
+    "secciones": {
+      "cuenta": "¡Ya casi! La noche que soñé desde chiquita.",
+      "itinerario": "Una noche llena de sorpresas.",
+      "vestimenta": "Brillá conmigo ✨",
+      "rsvp": "Confirmá antes del 1 de febrero, ¡no te quedes afuera!",
+      "mensajes": "Dejame un mensaje para leer esa noche."
+    }
+  },
+  "festejados": { "nombres": "Valentina", "iniciales": "V" },
+  "titulo": "XV de Valentina",
+  "fecha": "2027-02-20T21:00:00-03:00",
+  "fin": "2027-02-21T05:00:00-03:00",
+  "frase": "Hay momentos que se esperan toda la vida. Este es uno de ellos.",
+  "bienvenida": "Quiero que seas parte de una noche inolvidable.",
+  "portada": { "imagen": "eventos/xv-valentina/portada.svg", "video": "" },
+  "musica": { "src": "assets/audio/fiesta.m4a" },
+  "historia": [
+    { "fecha": "2012", "titulo": "Llegué al mundo", "texto": "Un 20 de febrero, con mucho calor y mucho amor." },
+    { "fecha": "2019", "titulo": "Mi primer recital de danza", "texto": "Ahí descubrí que el escenario era lo mío." },
+    { "fecha": "2027", "titulo": "Mis 15", "texto": "Y ahora quiero celebrarlo con vos." }
+  ],
+  "carta": { "titulo": "", "texto": "", "firma": "" },
+  "versiculo": { "texto": "", "cita": "" },
+  "dedicatoria": "",
+  "itinerario": [
+    { "hora": "21:00", "titulo": "Recepción", "descripcion": "Fotos y bienvenida", "icono": "camara" },
+    { "hora": "22:00", "titulo": "Entrada y vals", "descripcion": "", "icono": "estrella" },
+    { "hora": "23:00", "titulo": "Cena", "descripcion": "", "icono": "cena" },
+    { "hora": "00:00", "titulo": "Fiesta", "descripcion": "DJ, cotillón y show sorpresa", "icono": "musica" },
+    { "hora": "03:00", "titulo": "Torta y brindis", "descripcion": "", "icono": "torta" }
+  ],
+  "lugares": [
+    { "tipo": "Fiesta", "hora": "21:00 h", "nombre": "Salón Cristal", "direccion": "Av. España, Asunción", "query": "Avenida España, Asunción, Paraguay", "estacionamiento": "Estacionamiento en el subsuelo del salón." }
+  ],
+  "vestimenta": {
+    "codigo": "Elegante · Glam",
+    "descripcion": "¡Animate a brillar! El rosa queda reservado para la quinceañera.",
+    "colores": [ { "hex": "#111111", "nombre": "Negro" }, { "hex": "#c9c9d1", "nombre": "Plata" }, { "hex": "#6e4fa3", "nombre": "Violeta" }, { "hex": "#1d3b72", "nombre": "Azul" } ],
+    "evitar": [ { "hex": "#e58db1", "nombre": "Rosa" } ]
+  },
+  "galeria": [
+    { "src": "eventos/xv-valentina/galeria-1.svg", "alt": "Vestido", "w": 600, "h": 800 },
+    { "src": "eventos/xv-valentina/galeria-2.svg", "alt": "Bola de espejos", "w": 600, "h": 600 },
+    { "src": "eventos/xv-valentina/galeria-3.svg", "alt": "XV", "w": 600, "h": 900 },
+    { "src": "eventos/xv-valentina/galeria-4.svg", "alt": "Rosa", "w": 600, "h": 750 },
+    { "src": "eventos/xv-valentina/galeria-5.svg", "alt": "Globos", "w": 600, "h": 600 },
+    { "src": "eventos/xv-valentina/galeria-6.svg", "alt": "Brindis", "w": 600, "h": 820 }
+  ],
+  "padrinos": [
+    { "rol": "Mis padres", "nombres": "Gabriela Sosa y Ramón Aquino" },
+    { "rol": "Mis padrinos", "nombres": "Natalia Sosa y Hugo Ferreira" }
+  ],
+  "regalos": {
+    "titulo": "Regalos",
+    "mensaje": "Lo más lindo es que estés. Si querés hacerme un regalo, va a ser para mi viaje de 15.",
+    "cuentas": [ { "banco": "Banco Ejemplo S.A.", "titular": "Gabriela Sosa", "alias": "VALE.XV", "cuenta": "0000 9876 5432", "ci": "2.345.678" } ],
+    "qr": "",
+    "lista": { "texto": "", "url": "" }
+  },
+  "rsvp": { "whatsapp": "0982000000", "limite": "2027-02-01", "maxLibre": 2 },
+  "fotos": { "subir": "https://photos.google.com/", "album": "https://photos.google.com/" },
+  "demo_invitados": [
+    { "codigo": "SOFI01", "nombre": "Sofía Benítez", "telefono": "0982200001", "cupos": 1, "grupo": "Colegio" },
+    { "codigo": "MARI01", "nombre": "María Paz López", "telefono": "0982200002", "cupos": 1, "grupo": "Colegio" },
+    { "codigo": "AQUI04", "nombre": "Familia Aquino", "telefono": "0982200003", "cupos": 4, "grupo": "Familia" },
+    { "codigo": "SOSA03", "nombre": "Familia Sosa", "telefono": "0982200004", "cupos": 3, "grupo": "Familia" },
+    { "codigo": "DANZ06", "nombre": "Grupo de danza", "telefono": "0982200005", "cupos": 6, "grupo": "Danza" },
+    { "codigo": "TOMA01", "nombre": "Tomás Ferreira", "telefono": "0982200006", "cupos": 1, "grupo": "Primos" },
+    { "codigo": "RENA02", "nombre": "Renata y Julieta", "telefono": "0982200007", "cupos": 2, "grupo": "Colegio" },
+    { "codigo": "ABUE2X", "nombre": "Abuelos Sosa", "telefono": "0982200008", "cupos": 2, "grupo": "Familia" },
+    { "codigo": "FERR03", "nombre": "Familia Ferreira", "telefono": "0982200009", "cupos": 3, "grupo": "Padrinos" },
+    { "codigo": "LUCA01", "nombre": "Lucas Gamarra", "telefono": "0982200010", "cupos": 1, "grupo": "Colegio" },
+    { "codigo": "PROFE2", "nombre": "Profe Andrea y familia", "telefono": "0982200011", "cupos": 2, "grupo": "Danza" },
+    { "codigo": "VECI03", "nombre": "Familia Cabrera", "telefono": "0982200012", "cupos": 3, "grupo": "Vecinos" }
+  ],
+  "demo_mensajes": [
+    { "nombre": "Sofi", "mensaje": "¡Amiga, va a ser la mejor noche! Te quiero 💖" }
+  ]
+}

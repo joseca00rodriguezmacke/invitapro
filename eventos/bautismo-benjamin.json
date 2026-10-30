@@ -1,0 +1,65 @@
+{
+  "slug": "bautismo-benjamin",
+  "demo": true,
+  "plan": "pro",
+  "funciones": { "qrIngreso": false },
+  "tipo": "bautismo",
+  "mesas": false,
+  "tema": { "id": "bautismo", "paleta": 0, "tipografia": "", "ornamento": "medio", "apertura": "puertas", "efecto": "", "particulas": true },
+  "textos": {
+    "nivel": "completo",
+    "eyebrow": "Mi bautismo",
+    "padrinosTitulo": "Papás y padrinos",
+    "gracias": "Gracias por acompañar a Benja en un día tan especial.",
+    "secciones": { "itinerario": "Una mañana llena de bendiciones.", "rsvp": "Confirmá así preparamos todo para recibirte." }
+  },
+  "festejados": { "nombres": "Benjamín", "iniciales": "B" },
+  "titulo": "Bautismo de Benjamín",
+  "fecha": "2026-11-29T10:00:00-03:00",
+  "fin": "2026-11-29T16:00:00-03:00",
+  "frase": "Dejen que los niños vengan a mí.",
+  "bienvenida": "Con mucha alegría queremos que nos acompañes en el bautismo de nuestro hijo.",
+  "portada": { "imagen": "eventos/bautismo-benjamin/portada.svg", "video": "" },
+  "musica": { "src": "assets/audio/cuna.m4a" },
+  "historia": [],
+  "carta": { "titulo": "", "texto": "", "firma": "" },
+  "versiculo": { "texto": "Antes de formarte en el vientre, ya te conocía.", "cita": "Jeremías 1:5" },
+  "dedicatoria": "",
+  "itinerario": [
+    { "hora": "10:00", "titulo": "Ceremonia", "descripcion": "Capilla Virgen del Rosario", "icono": "iglesia" },
+    { "hora": "12:00", "titulo": "Almuerzo", "descripcion": "En casa de los abuelos", "icono": "cena" },
+    { "hora": "14:30", "titulo": "Torta", "descripcion": "", "icono": "torta" }
+  ],
+  "lugares": [
+    { "tipo": "Ceremonia", "hora": "10:00 h", "nombre": "Capilla Virgen del Rosario", "direccion": "San Lorenzo", "query": "San Lorenzo, Paraguay", "estacionamiento": "" },
+    { "tipo": "Almuerzo", "hora": "12:00 h", "nombre": "Casa de los abuelos", "direccion": "Fernando de la Mora", "query": "Fernando de la Mora, Paraguay", "estacionamiento": "Hay lugar para estacionar en el patio." }
+  ],
+  "vestimenta": { "codigo": "Casual elegante", "descripcion": "Tonos claros y cómodos para disfrutar al aire libre.", "colores": [ { "hex": "#dcebf7", "nombre": "Celeste" }, { "hex": "#f4efe6", "nombre": "Crema" }, { "hex": "#c9d6c3", "nombre": "Salvia" } ], "evitar": [] },
+  "galeria": [
+    { "src": "eventos/bautismo-benjamin/galeria-1.svg", "alt": "Nube", "w": 600, "h": 800 },
+    { "src": "eventos/bautismo-benjamin/galeria-2.svg", "alt": "Luna", "w": 600, "h": 600 },
+    { "src": "eventos/bautismo-benjamin/galeria-3.svg", "alt": "Zapatitos", "w": 600, "h": 900 },
+    { "src": "eventos/bautismo-benjamin/galeria-4.svg", "alt": "Concha", "w": 600, "h": 750 }
+  ],
+  "padrinos": [
+    { "rol": "Papás", "nombres": "Andrea y Federico" },
+    { "rol": "Padrinos", "nombres": "Mónica Villalba y Ariel Torres" }
+  ],
+  "regalos": { "titulo": "Regalos", "mensaje": "Tu presencia es el mejor regalo para Benja.", "cuentas": [ { "banco": "Banco Ejemplo S.A.", "titular": "Andrea Villalba", "alias": "BENJA.BAUTISMO", "cuenta": "", "ci": "" } ], "qr": "", "lista": { "texto": "", "url": "" } },
+  "rsvp": { "whatsapp": "0983000000", "limite": "2026-11-22", "maxLibre": 5 },
+  "fotos": { "subir": "https://photos.google.com/", "album": "" },
+  "demo_invitados": [
+    { "codigo": "ABUEL4", "nombre": "Abuelos Villalba", "telefono": "0983300001", "cupos": 2, "grupo": "Familia" },
+    { "codigo": "TORR03", "nombre": "Familia Torres", "telefono": "0983300002", "cupos": 3, "grupo": "Padrinos" },
+    { "codigo": "TIAS02", "nombre": "Tía Mónica y Tío Ariel", "telefono": "0983300003", "cupos": 2, "grupo": "Padrinos" },
+    { "codigo": "PRIM04", "nombre": "Primos Benítez", "telefono": "0983300004", "cupos": 4, "grupo": "Familia" },
+    { "codigo": "AMIG02", "nombre": "Carolina y Esteban", "telefono": "0983300005", "cupos": 2, "grupo": "Amigos" },
+    { "codigo": "VECI02", "nombre": "Familia Recalde", "telefono": "0983300006", "cupos": 2, "grupo": "Vecinos" },
+    { "codigo": "GUAR01", "nombre": "Seño Patricia", "telefono": "0983300007", "cupos": 1, "grupo": "Guardería" },
+    { "codigo": "ABUF02", "nombre": "Abuelos Fernández", "telefono": "0983300008", "cupos": 2, "grupo": "Familia" },
+    { "codigo": "AMIG3B", "nombre": "Familia Galeano", "telefono": "0983300009", "cupos": 3, "grupo": "Amigos" },
+    { "codigo": "TRAB01", "nombre": "Jimena Ortiz", "telefono": "0983300010", "cupos": 1, "grupo": "Trabajo" },
+    { "codigo": "TRAB02", "nombre": "Raúl y Silvia", "telefono": "0983300011", "cupos": 2, "grupo": "Trabajo" },
+    { "codigo": "MADR01", "nombre": "Madrina de mamá", "telefono": "0983300012", "cupos": 1, "grupo": "Familia" }
+  ]
+}

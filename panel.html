@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es-PY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel del anfitrión · InvitaPro</title>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="app">
+<header class="topbar"><a class="brand" href="./"><img src="assets/img/favicon.svg" alt="">InvitaPro</a><span class="sp"></span><span class="live" id="live">En vivo</span></header>
+<main class="app-main" id="app" aria-busy="true">
+  <div class="skel" style="height:40px;width:60%;margin:10px 0 20px"></div>
+  <div class="kpis"><div class="skel" style="height:86px"></div><div class="skel" style="height:86px"></div><div class="skel" style="height:86px"></div><div class="skel" style="height:86px"></div></div>
+  <div class="skel" style="height:300px"></div>
+</main>
+<dialog id="dlg"><div class="dh"><h2 id="dlg-t"></h2><button class="x-btn" type="button" aria-label="Cerrar" onclick="this.closest('dialog').close()">×</button></div><div class="db" id="dlg-b"></div></dialog>
+<script src="config.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/panel.js"></script>
+</body>
+</html>
