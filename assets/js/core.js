@@ -114,10 +114,11 @@
     async pedido(d) { const p = LS.get("pedidos", []); const id = "P-" + code(5); p.push(Object.assign({ id }, d)); LS.set("pedidos", p); return { ok: true, id }; }
   };
 
+  // Los eventos marcados "demo": true siempre usan el modo local, aunque haya Apps Script configurado.
   const api = {
     demo,
-    setEvent(ev) { local._ev = ev; },
-    call(action, data) { return demo ? local[action](data || {}) : remote(action, data); }
+    setEvent(ev) { local._ev = ev; if (ev && ev.demo) api.demo = true; },
+    call(action, data) { return api.demo ? local[action](data || {}) : remote(action, data); }
   };
 
   // ---------- Calendario ----------

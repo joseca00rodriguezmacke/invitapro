@@ -12,7 +12,7 @@ Invitaciones digitales premium para eventos en Paraguay. Costo cero: HTML/CSS/JS
 | `creador.html?modo=cliente` | Diseñador guiado para que el cliente arme su invitación y te la mande |
 | `extras.html?e=<slug>` | Save the date, imagen para compartir, historia animada y PDF imprimible |
 
-**Modo demo:** si `config.js` no tiene `appsScriptUrl`, todo funciona con localStorage y WhatsApp. Probá las demos:
+**Modo demo:** si `config.js` no tiene `appsScriptUrl`, todo funciona con localStorage y WhatsApp. Los eventos con `"demo": true` siempre usan este modo, aunque el backend esté conectado. Probá las demos:
 
 - `invitacion.html?e=boda-sofia-y-mateo&g=GOMEZ4` (VIP, panel: `panel.html?e=boda-sofia-y-mateo&k=demo`)
 - `invitacion.html?e=xv-valentina&g=SOFI01` (VIP)
